@@ -1,0 +1,98 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum JobStatus {
+  DRAFT
+  PUBLISHED
+  CLOSED
+}
+
+enum EmploymentType {
+  FULL_TIME
+  PART_TIME
+  CONTRACT
+  INTERNSHIP
+  TEMPORARY
+  COMPETITION
+}
+
+model Job {
+  id             String         @id @default(uuid()) @db.Uuid
+  title          String         @db.VarChar(200)
+  slug           String         @unique @db.VarChar(200)
+  excerpt        String?        @db.VarChar(300)
+  description    String         @db.Text
+  applicationUrl String         @db.VarChar(2048)
+  employmentType EmploymentType
+  status         JobStatus      @default(DRAFT)
+  featured       Boolean        @default(false)
+  sourceName     String?        @db.VarChar(150)
+  sourceUrl      String?        @db.VarChar(2048)
+  importedAt     DateTime?
+  deadline       DateTime
+  publishedAt    DateTime?
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+
+  companyId  String @db.Uuid
+  categoryId String @db.Uuid
+  locationId String @db.Uuid
+
+  company  Company  @relation(fields: [companyId], references: [id], onDelete: Restrict, onUpdate: Cascade)
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Restrict, onUpdate: Cascade)
+  location Location @relation(fields: [locationId], references: [id], onDelete: Restrict, onUpdate: Cascade)
+
+  @@index([status])
+  @@index([featured])
+  @@index([categoryId])
+  @@index([locationId])
+  @@index([companyId])
+  @@index([deadline])
+}
+
+model Company {
+  id          String   @id @default(uuid()) @db.Uuid
+  name        String   @db.VarChar(200)
+  slug        String   @unique @db.VarChar(200)
+  logoUrl     String?  @db.VarChar(2048)
+  website     String?  @db.VarChar(2048)
+  description String?  @db.Text
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  jobs Job[]
+}
+
+model Category {
+  id        String   @id @default(uuid()) @db.Uuid
+  name      String   @db.VarChar(100)
+  slug      String   @unique @db.VarChar(200)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  jobs Job[]
+}
+
+model Location {
+  id        String   @id @default(uuid()) @db.Uuid
+  name      String   @db.VarChar(100)
+  slug      String   @unique @db.VarChar(200)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  jobs Job[]
+}
+
+model Admin {
+  id           String   @id @default(uuid()) @db.Uuid
+  email        String   @unique @db.VarChar(255)
+  passwordHash String   @db.VarChar(255)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}

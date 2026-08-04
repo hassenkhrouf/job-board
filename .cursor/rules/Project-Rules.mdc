@@ -1,0 +1,36 @@
+---
+alwaysApply: true
+---
+
+Always read all Markdown documentation before writing code.
+
+Read:
+- AGENTS.md
+- AI_CONTEXT.md
+- TASKS.md
+- README.md
+- PROJECT_VISION.md
+- ROADMAP.md
+- TECH_STACK.md
+- every file inside /docs
+
+Never start coding before understanding the project.
+
+Always keep the project lightweight.
+
+Prioritize:
+- SEO
+- Performance
+- Maintainability
+
+Do not add features outside the roadmap.
+
+Implement only one task at a time.
+
+After each task:
+- Explain what was changed.
+- List modified files.
+- Verify the project still works.
+- Wait for user approval before continuing.
+
+Never refactor the architecture unless explicitly requested.
