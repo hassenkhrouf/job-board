@@ -1,40 +1,33 @@
 ```
-# Next.js build output
+# Next.js build outputs
 .next/
+
+# Environment variables
+.env.local
+.env.*
 
 # Dependencies
 node_modules/
 
-# Environment variables
-.env*
-!.env.example
-
 # Logs
 *.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# IDE specific
+.vscode/
+.idea/
 
 # OS generated files
 .DS_Store
 Thumbs.db
 
-# Coverage directory used by tools like istanbul
+# Coverage reports
 coverage/
-*.lcov
-
-# Temporary files
-*.tmp
-*.temp
-
-# IDE specific files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Build outputs
-dist/
-build/
-target/
-*.out
+htmlcov/
+.coverage
 
 # Python cache
 __pycache__/
@@ -42,54 +35,28 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
+.pytest_cache/
+.mypy_cache/
 
-# Virtual environments
-venv/
-.venv/
-env/
-ENV/
-
-# Rust/Cargo
-Cargo.lock
-target/
-
-# Go
+# Build artifacts
+dist/
+build/
+*.out
 *.exe
 *.dll
 *.so
-*.dylib
+*.a
+*.obj
 
-# Ruby
-*.gem
-.bundle/
-Gemfile.lock
-
-# Java
-*.class
-*.jar
-*.war
-*.ear
-hs_err_pid*
-
-# Gradle
-.gradle/
-build/
-
-# Maven
-.mvn/
-mvnw
-mvnw.cmd
-
-# Compressed archives
+# Compressed files
 *.zip
-*.tar.gz
-*.tar.bz2
-*.rar
-*.7z
 *.gz
 *.tar
+*.tgz
 *.bz2
 *.xz
+*.7z
+*.rar
 *.zst
 *.lz4
 *.lzh
@@ -100,7 +67,8 @@ mvnw.cmd
 *.Z
 *.lz
 *.lzo
+*.tar.gz
+*.tar.bz2
 *.tar.xz
 *.tar.zst
-
 ```
