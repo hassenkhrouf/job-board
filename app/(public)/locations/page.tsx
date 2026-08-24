@@ -3,9 +3,14 @@ import { EntityHub } from "@/components/jobs/EntityHub";
 import { getLocationHub } from "@/lib/jobs/get-location-hub";
 
 export const metadata: Metadata = {
-  title: "Lieux — Job Board",
+  title: "Lieux - JobBoard | Offres d'emploi par ville en Afrique",
   description:
     "Parcourez les offres d'emploi par ville ou région : Tunis, Sfax, Sousse, Gabès, et opportunités à distance.",
+  openGraph: {
+    title: "Lieux - JobBoard",
+    description: "Découvrez les opportunités d'emploi dans votre région.",
+    images: ["/og-image.png"],
+  },
 };
 
 export const revalidate = 300;
