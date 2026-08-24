@@ -1,0 +1,88 @@
+{
+  "app": {
+    "[project]/app/(public)/categories/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/(public)/jobs/[slug]/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/(public)/jobs/category/[slug]/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/(public)/jobs/location/[slug]/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/(public)/jobs/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/(public)/locations/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/(public)/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/_not-found/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/categories/[id]/delete/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/categories/[id]/edit/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/categories/new/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/categories/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/companies/[id]/delete/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/companies/[id]/edit/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/companies/new/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/companies/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/jobs/[id]/delete/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/jobs/[id]/edit/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/jobs/import/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/jobs/new/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/jobs/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/locations/[id]/delete/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/locations/[id]/edit/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/locations/new/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/locations/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/(panel)/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ],
+    "[project]/app/admin/login/page": [
+      "static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

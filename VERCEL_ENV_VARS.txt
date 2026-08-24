@@ -1,0 +1,13 @@
+# Copy these environment variables to Vercel
+# Go to: Vercel Dashboard -> Your Project -> Settings -> Environment Variables
+
+DATABASE_URL="postgresql://postgres.mkrtkssypeqjauftaxzt:12345678AAZZHK%40%40@aws-1-eu-west-1.pooler.supabase.com:6543/postgres?pgbouncer=true&connection_limit=1"
+
+ADMIN_SECRET="f7d877e47fd78c0a5ddba88a65eccbde4f8e892c4fdddb4927bf14a3250a484a"
+
+ADMIN_PASSWORD_HASH="194d2b6aec89bd2a9efd03835c5137d7:51763c2c4513d5d509f53bfeb56430aaee44d5c8e764c8c4ccdf6437bef8a7a191860a6d5388dc3223c54f4f0841ddb4c6802076ba0c2e7d12a0832d689c0f98"
+
+NEXT_PUBLIC_SITE_URL="https://your-project.vercel.app"
+
+# Optional: For AI job importer
+OPENROUTER_API_KEY=""
