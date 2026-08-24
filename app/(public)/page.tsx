@@ -11,9 +11,14 @@ import { getHomepageData } from "@/lib/jobs/get-homepage-data";
 import { getSearchFilterOptions } from "@/lib/jobs/get-search-filter-options";
 
 export const metadata: Metadata = {
-  title: "Job Board — Emplois et Concours en Tunisie",
+  title: "Accueil - JobBoard | Trouvez votre emploi de rêve en Afrique",
   description:
-    "Trouvez des offres d'emploi, concours publics, stages et opportunités remote en Tunisie et en Afrique du Nord.",
+    "Découvrez les dernières offres d'emploi en Afrique. Postulez maintenant pour des opportunités de carrière dans divers secteurs.",
+  openGraph: {
+    title: "Accueil - JobBoard | Trouvez votre emploi de rêve en Afrique",
+    description: "Découvrez les dernières offres d'emploi en Afrique.",
+    images: ["/og-image.png"],
+  },
 };
 
 export const revalidate = 300;

@@ -15,11 +15,10 @@ export async function Footer() {
       <Container className="grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <p className="text-sm font-semibold tracking-tight text-neutral-900">
-            Job Board
+            JobBoard
           </p>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-neutral-600">
-            Offres d&apos;emploi, concours publics, stages et opportunités
-            remote en Tunisie et en Afrique du Nord.
+            La première plateforme d&apos;emploi dédiée aux professionnels en Afrique. Découvrez des opportunités de carrière dans divers secteurs.
           </p>
         </div>
 

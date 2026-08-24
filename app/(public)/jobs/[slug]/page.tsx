@@ -24,13 +24,13 @@ export async function generateMetadata({
 
   if (!job) {
     return {
-      title: "Offre introuvable | Job Board",
+      title: "Offre introuvable | JobBoard",
     };
   }
 
   const description = truncate(job.excerpt ?? job.description, 160);
   const canonical = `/jobs/${job.slug}`;
-  const title = `${job.title} — ${job.company.name} | Job Board`;
+  const title = `${job.title} — ${job.company.name} | JobBoard`;
 
   return {
     title,
@@ -43,12 +43,14 @@ export async function generateMetadata({
       description,
       url: canonical,
       type: "article",
-      locale: "fr_TN",
+      locale: "fr_FR",
+      images: ["/og-image.png"],
     },
     twitter: {
       card: "summary",
       title,
       description,
+      images: ["/og-image.png"],
     },
   };
 }
