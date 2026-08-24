@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/admin/layout,_N_T_/admin/(panel)/layout,_N_T_/admin/(panel)/jobs/layout,_N_T_/admin/(panel)/jobs/import/layout,_N_T_/admin/(panel)/jobs/import/page,_N_T_/admin/jobs/import"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/admin/!KHBhbmVsKQ/jobs/import/__PAGE__",
+    "/admin/!KHBhbmVsKQ/jobs/import",
+    "/admin/!KHBhbmVsKQ/jobs",
+    "/admin/!KHBhbmVsKQ",
+    "/admin",
+    "/_index",
+    "/_head"
+  ]
+}

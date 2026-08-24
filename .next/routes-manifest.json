@@ -1,0 +1,254 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/admin/categories/[id]/delete",
+      "regex": "^/admin/categories/([^/]+?)/delete(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/categories/(?<nxtPid>[^/]+?)/delete(?:/)?$"
+    },
+    {
+      "page": "/admin/categories/[id]/edit",
+      "regex": "^/admin/categories/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/categories/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    },
+    {
+      "page": "/admin/companies/[id]/delete",
+      "regex": "^/admin/companies/([^/]+?)/delete(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/companies/(?<nxtPid>[^/]+?)/delete(?:/)?$"
+    },
+    {
+      "page": "/admin/companies/[id]/edit",
+      "regex": "^/admin/companies/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/companies/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    },
+    {
+      "page": "/admin/jobs/[id]/delete",
+      "regex": "^/admin/jobs/([^/]+?)/delete(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/jobs/(?<nxtPid>[^/]+?)/delete(?:/)?$"
+    },
+    {
+      "page": "/admin/jobs/[id]/edit",
+      "regex": "^/admin/jobs/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/jobs/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    },
+    {
+      "page": "/admin/locations/[id]/delete",
+      "regex": "^/admin/locations/([^/]+?)/delete(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/locations/(?<nxtPid>[^/]+?)/delete(?:/)?$"
+    },
+    {
+      "page": "/admin/locations/[id]/edit",
+      "regex": "^/admin/locations/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/locations/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    },
+    {
+      "page": "/jobs/category/[slug]",
+      "regex": "^/jobs/category/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/jobs/category/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/jobs/location/[slug]",
+      "regex": "^/jobs/location/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/jobs/location/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/jobs/[slug]",
+      "regex": "^/jobs/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/jobs/(?<nxtPslug>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/categories",
+      "regex": "^/admin/categories(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/categories(?:/)?$"
+    },
+    {
+      "page": "/admin/categories/new",
+      "regex": "^/admin/categories/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/categories/new(?:/)?$"
+    },
+    {
+      "page": "/admin/companies",
+      "regex": "^/admin/companies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/companies(?:/)?$"
+    },
+    {
+      "page": "/admin/companies/new",
+      "regex": "^/admin/companies/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/companies/new(?:/)?$"
+    },
+    {
+      "page": "/admin/jobs",
+      "regex": "^/admin/jobs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/jobs(?:/)?$"
+    },
+    {
+      "page": "/admin/jobs/import",
+      "regex": "^/admin/jobs/import(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/jobs/import(?:/)?$"
+    },
+    {
+      "page": "/admin/jobs/new",
+      "regex": "^/admin/jobs/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/jobs/new(?:/)?$"
+    },
+    {
+      "page": "/admin/locations",
+      "regex": "^/admin/locations(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/locations(?:/)?$"
+    },
+    {
+      "page": "/admin/locations/new",
+      "regex": "^/admin/locations/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/locations/new(?:/)?$"
+    },
+    {
+      "page": "/admin/login",
+      "regex": "^/admin/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/login(?:/)?$"
+    },
+    {
+      "page": "/categories",
+      "regex": "^/categories(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/categories(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/jobs",
+      "regex": "^/jobs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/jobs(?:/)?$"
+    },
+    {
+      "page": "/locations",
+      "regex": "^/locations(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/locations(?:/)?$"
+    },
+    {
+      "page": "/robots.txt",
+      "regex": "^/robots\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/robots\\.txt(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
